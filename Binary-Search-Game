@@ -1,0 +1,24 @@
+def binary_search_game():
+    print("Think of a number between 1 and 100 (inclusive). I will guess it.")
+    low, high = 1, 100
+    tries = 0
+    
+    while low <= high:
+        mid = (low + high) // 2
+        tries += 1
+        print(f"Is your number {mid}?")
+        response = input("Enter 'h' if higher, 'l' if lower, 'c' if correct: ").lower()
+        
+        if response == 'c':
+            print(f"Got it in {tries} tries! Binary search FTW.")
+            return
+        elif response == 'h':
+            low = mid + 1
+        elif response == 'l':
+            high = mid - 1
+        else:
+            print("Invalid input. Use 'h', 'l', or 'c'.")
+    
+    print("Hmm, something’s off... Are you sure about your answers?")
+
+binary_search_game()
