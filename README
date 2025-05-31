@@ -1,0 +1,17 @@
+# Binary Search Game
+
+A simple interactiv command-line game that uses the binary search algorithm to guess your number.
+
+## Hoe to play
+
+1. Think of a number between 1 and 100.
+2. The program will try to guess it by asking if the number is higher, lower, or correct.
+3. Repond with:
+   - 'h' for higher
+   - 'l' for lower
+   - 'c' for correct
+
+## run
+
+'''bash
+python binary_search_game.py
